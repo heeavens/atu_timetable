@@ -1,0 +1,26 @@
+# Telegram Bot
+python-telegram-bot[job-queue]==21.*
+
+# Web Automation
+playwright==1.*
+
+# Database
+aiosqlite==0.*
+
+# Environment Variables
+python-decouple==3.*
+
+# HTML Parsing
+beautifulsoup4==4.*
+
+# Date Formatting
+python-dateutil==2.*
+
+# Scheduler
+APScheduler==3.*
+
+# Encryption
+cryptography==44.*
+
+# Linting (dev)
+ruff==0.*
