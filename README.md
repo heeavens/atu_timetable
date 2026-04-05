@@ -1,4 +1,4 @@
-# 🎓 ATU Timetable Bot
+# ATU Timetable Bot
 
 <div align="center">
 
@@ -13,7 +13,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
