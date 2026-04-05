@@ -114,7 +114,7 @@ class ScraperService:
                 )
                 return []
 
-            lessons = self._parse_api_response(
+            lessons = await self._parse_api_response(
                 response, target_date
             )
             logger.info(
@@ -159,14 +159,14 @@ class ScraperService:
             return match.group(1)
         return None
 
-    def _parse_api_response(
+    async def _parse_api_response(
         self, events: list, target_date: date
     ) -> list[Lesson]:
         lessons: list[Lesson] = []
 
         for event in events:
             try:
-                lesson = self._parse_event(event, target_date)
+                lesson = await self._parse_event(event, target_date)
                 if lesson:
                     lessons.append(lesson)
             except Exception as exc:
@@ -179,7 +179,7 @@ class ScraperService:
         lessons.sort(key=lambda lesson: lesson.start_time)
         return lessons
 
-    def _parse_event(
+    async def _parse_event(
         self, event: dict, target_date: date
     ) -> Lesson | None:
         start_str = event.get("start", "")
@@ -218,7 +218,7 @@ class ScraperService:
 
         building = self._extract_building(room)
         maps_url = (
-            self._maps_service.get_maps_url(room)
+            await self._maps_service.get_maps_url(room)
             if room and room != "TBA"
             else ""
         )

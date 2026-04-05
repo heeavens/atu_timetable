@@ -4,6 +4,9 @@ python-telegram-bot[job-queue]==21.*
 # Web Automation
 playwright==1.*
 
+# HTTP Client (MazeMap API)
+aiohttp==3.*
+
 # Database
 aiosqlite==0.*
 
