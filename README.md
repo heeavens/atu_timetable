@@ -17,17 +17,17 @@
 
 | Feature | Description |
 |---------|-------------|
-| 🔐 **Secure SSO Login** | Authenticate via Microsoft SSO with 2FA support (Authenticator number matching & OTP) |
-| 🕐 **Current Class** | Instantly see what class is happening right now |
-| ⏭ **Next Class** | Check your upcoming class at a glance |
-| 📅 **Day Schedule** | View full schedule for any day of the week |
-| 🗺 **Maps Integration** | Direct links to room locations via MazeMap & Google Maps |
-| 🔄 **Auto-Caching** | Schedule is cached and refreshed automatically for speed |
-| 🔒 **Encrypted Sessions** | User sessions stored with Fernet symmetric encryption |
+| **Secure SSO Login** | Authenticate via Microsoft SSO with 2FA support (Authenticator number matching & OTP) |
+| **Current Class** | Instantly see what class is happening right now |
+| **Next Class** | Check your upcoming class at a glance |
+| **Day Schedule** | View full schedule for any day of the week |
+| **Maps Integration** | Direct links to room locations via MazeMap |
+| **Auto-Caching** | Schedule is cached and refreshed automatically for speed |
+| **Encrypted Sessions** | User sessions stored with Fernet symmetric encryption |
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 atu_bot/
@@ -60,9 +60,9 @@ atu_bot/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### Prerequisites
+### Requirements
 
 - **Python 3.11+**
 - A **Telegram Bot Token** from [@BotFather](https://t.me/BotFather)
@@ -113,21 +113,19 @@ python main.py
 
 ---
 
-## 🤖 Bot Commands
+## Bot Commands
 
 | Command / Button | Description |
 |-----------------|-------------|
 | `/start` | Begin login or resume session |
-| `/cancel` | Cancel ongoing login |
-| `/logout` | Sign out and delete all data |
-| 🕐 **Now** | Show current class |
-| ⏭ **Next** | Show next upcoming class |
-| 📅 **Day** | Pick a day to view schedule |
-| 🚪 **Sign Out** | Log out via button |
+|  **Now** | Show current class |
+|  **Next** | Show next upcoming class |
+|  **Day** | Pick a day to view schedule |
+| **Sign Out** | Log out via button |
 
 ---
 
-## 🔐 Security
+## Security
 
 - **Passwords are never stored** — only browser session cookies are saved
 - Session state is **encrypted with Fernet** (AES-128-CBC) before database storage
@@ -136,7 +134,7 @@ python main.py
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **[python-telegram-bot](https://python-telegram-bot.org/)** — Async Telegram Bot framework
 - **[Playwright](https://playwright.dev/python/)** — Headless browser for SSO authentication & scraping
@@ -148,6 +146,6 @@ python main.py
 
 ---
 
-## 📄 License
+## License
 
 This project is for educational purposes at Atlantic Technological University.
